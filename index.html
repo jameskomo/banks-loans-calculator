@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Loans Calculator</title>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link rel="stylesheet" type="text/css" href="css/animate.css">
+  <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Archivo+Black|Bungee+Inline|Faster+One" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Bungee|Bungee+Shade|Holtwood+One+SC|Rubik+Mono+One|Rye" rel="stylesheet">
+  <link rel="shortcut icon" type="images/png" href="images/debit-card.png">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <div class="navbar">
+    <div class="logo">LOANS CALCULATOR</div>
+    <div class="menu">
+      <a href="#">Home</a>
+      <a href="#">Calculator</a>
+      <a href="#">About</a>
+      <a href="#">Contacts</a>
+    </div>
+  </div>
+  <div class="header">
+    <img src="images/ksh.jpg" alt="calculator" height=600px width=100%>
+    <div class="centered">Calculate the cost of your loan today!</div>
+  </div>
+  <div class="container">
+    <br>
+    <h1>Calculate</h1><br>
+    <div class="well" id="calculate">
+      <div class="row">
+        <div class="col-md-6">
+          <form action="/action_page.php">
+            Loan Amount:<br>
+            <input type="number" name="loanAmount" placeholder="Enter loan amount">
+            <br><br>
+            Loan Term:<br>
+            <input type="number" name="loanTerm" placeholder="Loan  term in months">
+            <br><br>
+            <select>
+              <option value="" disabled selected>Choose Bank</option>
+              <option value="kcb">KCB</option>
+              <option value="equity">Equity</option>
+              <option value="coop">Cooperative Bank of Kenya</option>
+              <option value="barclays">Barclays</option>
+              <option value="mshwari">Mshwari</option>
+              <option value="tala">Tala</option>
+            </select>
+            <br><br>
+            <input type="submit" value="Calculate">
+          </form>
+        </div>
+        <!-- <div class="col-md-1"></div> -->
+        <div class="col-md-5" id="result">
+          <div>
+            <h4>Monthly payments:</h4>
+            <h4 class="output">24,000</h4>
+            <h4>Total interest:</h4>
+            <h4 class="output">10,000</h4>
+            <h4>Total amount to be paid:</h4>
+            <h4 class="output">240,000</h4>
+            <h4>Application cost:</h4>
+            <h4 class="output">1,000</h4>
+            <h4>Annual interest rate:</h4>
+            <h4 class="output">14%</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <h1>Contact Us</h1> <br>
+    <div class="well" id="contact">
+      <form action="">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+
+</body>
