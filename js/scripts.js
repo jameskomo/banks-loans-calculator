@@ -59,3 +59,16 @@ function appFee(amount, lender) {
       return appFees;
     }
   }
+
+    var lenderName = lender.lenderName();
+
+    if (lenderType == "Micro Lender"){
+      if (lenderName == "Tala") {
+        appFees = 100;
+        return appFees;
+      } else if (lenderName == "Mshwari") {
+        appFees = 150;
+        return appFees;
+      }
+    }
+  }
