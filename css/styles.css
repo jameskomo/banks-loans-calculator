@@ -1,14 +1,15 @@
-body{
+body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
   background-color: #dfe6e9;
 }
-.navbar{
+
+.navbar {
   position: fixed;
-  height:60px;
-  overflow:hidden;
-  top:0;
+  height: 60px;
+  overflow: hidden;
+  top: 0;
   display: flex;
   align-items: center;
   background: white;
@@ -16,7 +17,8 @@ body{
   z-index: 9999;
   font-family: 'Holtwood One SC', serif;
 }
-.logo{
+
+.logo {
   float: left;
   margin-left: 30px;
   color: black;
@@ -24,29 +26,34 @@ body{
   font-family: 'Holtwood One SC', serif;
   background-size: contain;
 }
-.menu{
+
+.menu {
   position: absolute;
   right: 20px;
 }
-.menu a{
+
+.menu a {
   color: black;
   text-decoration: none;
   font-weight: 700;
-  margin-left:20px;
+  margin-left: 20px;
   transition: color 0.3s;
 }
+
 img {
-  background-repeat:no-repeat;
+  background-repeat: no-repeat;
   margin-top: 60px;
   opacity: 0.9;
   background-size: cover;
   background-position: center;
   height: 500px;
 }
-.menu a:hover{
+
+.menu a:hover {
   color: #c0392b
 }
-#result{
+
+#result {
   border-style: solid;
   border-width: thin;
   text-align: center;
@@ -57,15 +64,17 @@ img {
   background-color: white;
   width: 50%;
   height: 50%;
-  display:none;
-  }
-.output{
+  display: none;
+}
+
+.output {
   border-style: solid;
   border-radius: 20px;
   border-width: thin;
   width: 200px;
   margin-left: 33%;
 }
+
 input[type=text], select, textarea {
   width: 100%;
   padding: 12px;
@@ -77,7 +86,7 @@ input[type=text], select, textarea {
   resize: vertical;
 }
 
-#check{
+#check {
   background-color: #4CAF50;
   color: white;
   padding: 12px 20px;
@@ -85,7 +94,8 @@ input[type=text], select, textarea {
   border-radius: 10px;
   cursor: pointer;
 }
-#recalculate{
+
+#recalculate {
   background-color: #4CAF50;
   color: white;
   padding: 12px 20px;
@@ -97,7 +107,7 @@ input[type=text], select, textarea {
   border-radius: 10px;
 }
 
-#calculate{
+#calculate {
   border-style: solid;
   border-width: thin;
   border-radius: 10px;
@@ -105,42 +115,49 @@ input[type=text], select, textarea {
   height: 600px;
   background-color: white;
 }
-select{
+
+select {
   width: 220px;
 }
-#form{
+
+#form {
   margin-top: 120px;
   font-family: 'Roboto', sans-serif;
   font-weight: 800;
   font-size: 20px;
   text-align: center;
-
 }
-#form input{
+
+#form input {
   border-radius: 5px;
 }
-h1{
+
+h1 {
   font-family: 'Oswald', sans-serif;
 }
-.page-footer{
+
+.page-footer {
   background-color: white;
   height: 50px;
   padding-top: 15px;
 }
-#submit{
+
+#submit {
   display: block;
   margin-left: 45%;
   width: 100px;
-  height:50px;
+  height: 50px;
   border-radius: 100px;
   cursor: pointer;
-  background-color:#55efc4;
+  background-color: #55efc4;
   font-weight: bold;
 }
-#contact{
+
+#contact {
   border-radius: 30px;
   font-size: 15px;
 }
-#crsl{
+
+#crsl {
   margin-top: 10px;
 }
