@@ -24,7 +24,7 @@ Lenders.prototype.lenderName = function() {
 };
 
 function loan(amount, term, facility) {
-  var institution = facility.lenderCheck();
+  var institution = facility.lender;
 
   if (institution == "Bank") {
     var interestAmount = amount * facility.interest / 100 * term / 12;
@@ -40,8 +40,8 @@ function loan(amount, term, facility) {
 }
 
 function appFee(amount, lender) {
-  var lenderType = lender.lenderCheck();
-  var lenderInterest = lender.lenderInterest();
+  var lenderType = lender.lender;
+  var lenderInterest = lender.interest;
   var appFees = 0;
 
   if (lenderType == "Bank") {
@@ -63,52 +63,44 @@ function appFee(amount, lender) {
   }
 }
 
+function cheapestLender(amount, term, facility) {
+  var institution = facility.lenderCheck();
+  var cheapLender = facility.lenderInterest();
+  let bankInterest = 0;
+  let totalBankLoan = 0;
+  let microinterest = 0;
+  let totalMicroLoan = 0;
+
+  if (institution == "Bank" && cheapLender < 14) {
+    bankInterestt = amount * facility.interest / 100 * term / 12;
+    totalBankLoan = amount + bankInterest;
+    return totalBankLoan;
+  }
+
+  if (institution == "Micro Lender" && cheapLender < 10) {
+    microinterest = amount * facility.interest / 100;
+    totalMicroLoan = amount + microinterest;
+    return totalMicroLoan;
+  }
+}
 $(document).ready(function() {
-      $('[data-toggle="tooltip"]').tooltip();
+  // $('[data-toggle="tooltip"]').tooltip();
+  $('#check').click(function() {
+    event.preventDefault();
+    var loanAmount = $('#loan-amount').val();
+    var loanTerm = $("#loan-term").val();
+    var lenderList = $("#lender-list option:selected").val();
+    console.log(lenderList);
+    console.log(requestedLoan);
 
 
-      $(document).ready(function() {
-            $("#check").click(function(e) {
-                  e.preventDefault();
 
-                  var loanAmount = parseInt($("input#loan-amount").val());
-                  var loanTerm = parseInt($("input#loan-term").val());
-                  var lenderList = $("select#lender-list option: selected").text();
+    var requestedLoan = loan(loanAmount, loanTerm, lenderList);
 
-                  var requestedLoan = loan(loanAmount, loanTerm, lenderList);
-                  var applicationFee = appfee(loanAmount, lenderList);
-
-                  function cheapestLender(amount, term, facility) {
-                    var institution = facility.lenderCheck();
-                    var cheapLender = facility.lenderInterest();
-                    let bankInterest = 0;
-                    let totalBankLoan = 0;
-                    let microinterest = 0;
-                    let totalMicroLoan = 0;
-
-                    if (institution == "Bank" && cheapLender < 14) {
-                      bankInterestt = amount * facility.interest / 100 * term / 12;
-                      totalBankLoan = amount + bankInterest;
-                      return totalBankLoan;
-                    }
-
-                    if (institution == "Micro Lender" && cheapLender < 10) {
-                      microinterest = amount * facility.interest / 100;
-                      totalMicroLoan = amount + microinterest;
-                      return totalMicroLoan;
-                    }
-                  }
-
-                  $(document).ready(function() {
-                    $("#check").click(function(e) {
-                      e.preventDefault();
-
-                      var loanAmount = parseInt($("input#loan-amount").val());
-                      var loanTerm = parseInt($("input#loan-term").val());
-                      var lenderList = $("select#lender-list option: selected").val();
+    var applicationFee = appFee(loanAmount, lenderList);
+    var potentialLoan = requestedLoan + applicationFee;
+    var monthlyPayments = potentialLoan / 12;
 
 
-                      var potentialLoan = requestedLoan + applicationFee;
-                    });
-
-                  });
+  });
+});
