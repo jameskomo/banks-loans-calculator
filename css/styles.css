@@ -1,23 +1,22 @@
-body {
+body{
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  background-color: #dfe6e9;
 }
-
-.navbar {
+.navbar{
   position: fixed;
-  height: 60px;
-  overflow: hidden;
-  top: 0;
+  height:60px;
+  overflow:hidden;
+  top:0;
   display: flex;
   align-items: center;
-  background: #dfe6e9;
+  background: white;
   width: 100%;
   z-index: 9999;
   font-family: 'Holtwood One SC', serif;
 }
-
-.logo {
+.logo{
   float: left;
   margin-left: 30px;
   color: black;
@@ -25,49 +24,32 @@ body {
   font-family: 'Holtwood One SC', serif;
   background-size: contain;
 }
-
-.menu {
+.menu{
   position: absolute;
   right: 20px;
 }
-
-.menu a {
+.menu a{
   color: black;
   text-decoration: none;
   font-weight: 700;
-  margin-left: 20px;
+  margin-left:20px;
   transition: color 0.3s;
 }
-
 img {
-  background-repeat: no-repeat;
+  background-repeat:no-repeat;
   margin-top: 60px;
   opacity: 0.9;
   background-size: cover;
   background-position: center;
-  /* height: 25%; */
 }
-
-.header {
+.header{
   text-align: center;
-  color: black;
+  color: white;
 }
-
-.centered {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 50px;
-  font-family: 'Holtwood One SC', serif;
-  font-style: italic;
-}
-
-.menu a:hover {
+.menu a:hover{
   color: #c0392b
 }
-
-#result {
+#result{
   border-style: solid;
   border-width: thin;
   text-align: center;
@@ -78,27 +60,16 @@ img {
   background-color: white;
   width: 50%;
   height: 50%;
-  padding-left:
-
-  /* display: none; */
-}
-
-.output {
+  /* padding-left; */
+  display:none;
+  }
+.output{
   border-style: solid;
   border-radius: 20px;
   border-width: thin;
   width: 200px;
   margin-left: 33%;
 }
-
-.page-footer {
-  opacity: 6;
-  background-color: #fdfff0;
-  position: relative;
-  height: 35px;
-  padding-top: 10px;
-}
-
 input[type=text], select, textarea {
   width: 100%;
   padding: 12px;
@@ -118,13 +89,6 @@ input[type=text], select, textarea {
   border-radius: 4px;
   cursor: pointer;
 }
-<<<<<<< HEAD
-
-input[type=submit]:hover {
-  background-color: #45a049;
-}
-
-=======
 #recalculate{
   background-color: #4CAF50;
   color: white;
@@ -136,7 +100,6 @@ input[type=submit]:hover {
   margin-top: 4%;
   border-radius: 10px;
 }
->>>>>>> 6ed4a786c2dd250556a7a769ade3cd3c1944cabd
 
 #calculate{
   border-style: solid;
@@ -144,10 +107,9 @@ input[type=submit]:hover {
   border-radius: 10px;
   width: 100%;
   height: 600px;
-  background-color: #dfe6e9;
+  background-color: white;
 }
-
-select {
+select{
   width: 220px;
 }
 #form{
@@ -156,7 +118,7 @@ select {
   font-weight: 800;
   font-size: 20px;
   text-align: center;
-  display: none;
+  /* display: none; */
 
 }
 #form input{
@@ -164,4 +126,10 @@ select {
 }
 h1{
   font-family: 'Oswald', sans-serif;
+}
+.page-footer{
+  background-color: white;
+  height: 50px;
+  padding-top: 15px;
+
 }

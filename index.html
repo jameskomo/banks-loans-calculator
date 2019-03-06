@@ -17,46 +17,41 @@
 
 <body>
   <div class="navbar">
-    <div class="logo">LOANS CALCULATOR</div>
+    <div class="logo">LOANS CALCULATOR</span></div>
     <div class="menu">
-      <a href="#">Home</a>
-      <a href="#">Calculator</a>
+      <a href="index.html">Home</a>
+      <a href="#calculate">Calculator</a>
       <a href="#">About</a>
-      <a href="#">Contacts</a>
+      <a href="#contact">Contacts</a>
     </div>
   </div>
   <div class="header">
-    <img src="images/ksh.jpg" alt="calculator" height=600px width=100%>
-    <div class="centered">Calculate the cost of your loan today!</div>
+    <img src="images/bank.jpg" alt="calculator" height=400px width=100%>
   </div>
   <div class="container">
     <br>
     <h1>Calculate</h1><br>
     <div id="calculate">
       <div class="row">
-        <!-- <div class="col-md-6"> -->
-          <form action="#" id="form">
-            Loan Amount:<br>
-            <input type="number" name="loanAmount" placeholder="Enter loan amount">
-            <br><br>
-            Loan Term:<br>
-            <input type="number" name="loanTerm" placeholder="Loan term in months">
-            <br><br>
-            <select>
-              <option value="" disabled selected>Choose Bank</option>
-              <option value="kcb">KCB</option>
-              <option value="equity">Equity</option>
-              <option value="coop">Cooperative Bank of Kenya</option>
-              <option value="barclays">Barclays</option>
-              <option value="mshwari">Mshwari</option>
-              <option value="tala">Tala</option>
-            </select>
-            <br><br>
-            <!-- <input type="submit" value="Calculate"> -->
-            <button id="check" class="btn btn-lg">Calculate <i class="fas fa-calculator"></i></button>
-          </form>
-        <!-- </div> -->
-        <!-- <div class="col-md-1"></div> -->
+        <form action="#" id="form">
+          Loan Amount:<br>
+          <input type="number" name="loanAmount" placeholder="Enter loan amount" id="loan-amount">
+          <br><br>
+          Loan Term:<br>
+          <input type="number" name="loanTerm" placeholder="Loan term in months" id="loan-term">
+          <br><br>
+          <select id="lender-list">
+            <option value="" disabled selected>Choose Bank</option>
+            <option value="kcb">KCB</option>
+            <option value="equity">Equity</option>
+            <option value="coop">Cooperative Bank of Kenya</option>
+            <option value="barclays">Barclays</option>
+            <option value="mshwari">Mshwari</option>
+            <option value="tala">Tala</option>
+          </select>
+          <br><br>
+          <button id="check" class="btn btn-lg">Calculate <i class="fas fa-calculator"></i></button>
+        </form>
         <div id="result">
           <div>
             <h4>Monthly payments:</h4>
@@ -70,8 +65,8 @@
             <h4>Annual interest rate:</h4>
             <h4 class="output">14%</h4>
           </div>
+          <button id="recalculate">Re-calculate</button>
         </div>
-        <button id="recalculate">Re-calculate</button>
       </div>
     </div>
     <br>
@@ -92,6 +87,6 @@
     </div>
   </div>
   <footer class="page-footer">
-    <div class="footer-copyright text-center py-3"><strong>Developed by Tosh, SPG & K.O.M.O © 2019</strong></div>
+    <div class="footer-copyright text-center py-3"><strong>Developed by TOSH, SPG, M.M.A, & K.O.M.O © 2019</strong></div>
   </footer>
 </body>
