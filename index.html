@@ -8,6 +8,8 @@
   <link rel="stylesheet" type="text/css" href="css/animate.css">
   <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Archivo+Black|Bungee+Inline|Faster+One" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Bungee|Bungee+Shade|Holtwood+One+SC|Rubik+Mono+One|Rye" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata|Oswald|Roboto+Slab" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   <link rel="shortcut icon" type="images/png" href="images/debit-card.png">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -30,10 +32,10 @@
   <div class="container">
     <br>
     <h1>Calculate</h1><br>
-    <div class="well" id="calculate">
+    <div id="calculate">
       <div class="row">
         <div class="col-md-6">
-          <form action="/action_page.php">
+          <form action="#" id="form">
             Loan Amount:<br>
             <input type="number" name="loanAmount" placeholder="Enter loan amount">
             <br><br>
@@ -50,7 +52,8 @@
               <option value="tala">Tala</option>
             </select>
             <br><br>
-            <input type="submit" value="Calculate">
+            <!-- <input type="submit" value="Calculate"> -->
+            <button id="check" class="btn btn-lg">Calculate <i class="fas fa-calculator"></i>ar</button>
           </form>
         </div>
         <!-- <div class="col-md-1"></div> -->
