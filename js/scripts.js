@@ -38,3 +38,24 @@ function loan(amount, term, facility) {
     return totalMicroLoan;
   }
 }
+
+function appFee(amount, lender) {
+  var lenderType = lender.lenderCheck();
+  var lenderInterest = lender.lenderInterest();
+  var appFees = 0;
+
+  if (lenderType == "Bank") {
+    if (lenderInterest >= 10 && lenderInterest <= 12){
+      appFees = 0.05*amount;
+      return appFees;
+    } else if (lenderInterest >= 13 && lenderInterest <= 14){
+      appFees = 0.10*amount;
+      return appFees;
+    } else if (lenderInterest >= 15 && lenderInterest <= 17){
+      appFees = 0.12*amount;
+      return appFees;
+    } else if (lenderInterest >= 18 && lenderInterest <= 20){
+      appFees = 0.17*amount;
+      return appFees;
+    }
+  }
