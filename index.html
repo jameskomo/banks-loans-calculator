@@ -32,13 +32,13 @@
     <h1>Calculate</h1><br>
     <div id="calculate">
       <div class="row">
-        <div class="col-md-6">
+        <!-- <div class="col-md-6"> -->
           <form action="#" id="form">
             Loan Amount:<br>
             <input type="number" name="loanAmount" placeholder="Enter loan amount">
             <br><br>
             Loan Term:<br>
-            <input type="number" name="loanTerm" placeholder="Loan  term in months">
+            <input type="number" name="loanTerm" placeholder="Loan term in months">
             <br><br>
             <select>
               <option value="" disabled selected>Choose Bank</option>
@@ -51,24 +51,25 @@
             </select>
             <br><br>
             <!-- <input type="submit" value="Calculate"> -->
-            <button id="check" class="btn btn-lg">Calculate <i class="fas fa-calculator"></i>ar</button>
+            <button id="check" class="btn btn-lg">Calculate <i class="fas fa-calculator"></i></button>
           </form>
-        </div>
+        <!-- </div> -->
         <!-- <div class="col-md-1"></div> -->
-        <div class="col-md-5" id="result">
+        <div id="result">
           <div>
             <h4>Monthly payments:</h4>
-            <h4 class="output">24,000</h4>
+            <h4 class="output">9,999,000</h4>
             <h4>Total interest:</h4>
-            <h4 class="output">10,000</h4>
+            <h4 class="output">9,999,999</h4>
             <h4>Total amount to be paid:</h4>
-            <h4 class="output">240,000</h4>
+            <h4 class="output">9,999,000</h4>
             <h4>Application cost:</h4>
             <h4 class="output">1,000</h4>
             <h4>Annual interest rate:</h4>
             <h4 class="output">14%</h4>
           </div>
         </div>
+        <button id="recalculate">Re-calculate</button>
       </div>
     </div>
     <br>
