@@ -59,4 +59,22 @@ function appFee(amount, lender) {
       return appFees;
     }
   }
+  else{
+    return appFees;
+  }
 }
+
+$(document).ready(function () {
+  $("#check").click(function(e) {
+    e.preventDefault();
+
+    var loanAmount = parseInt($("input#loan-amount").val());
+    var loanTerm = parseInt($("input#loan-term").val());
+    var lenderList = $("select#lender-list option: selected").text();
+
+    var requestedLoan = loan(loanAmount, loanTerm, lenderList);
+    var applicationFee = appfee(loanAmount, lenderList);
+
+    var potentialLoan = requestedLoan + applicationFee;
+  });
+});
