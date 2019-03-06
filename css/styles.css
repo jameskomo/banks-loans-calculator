@@ -69,13 +69,17 @@ img {
 
 #result {
   border-style: solid;
-  text-align: center;
   border-width: thin;
+  text-align: center;
   font-family: 'Roboto Slab', serif;
   border-radius: 20px;
-  margin-top: 90px;
+  margin-top: 12%;
+  margin-left: 25%;
   background-color: white;
-  display: none;
+  width: 50%;
+  height: 50%;
+  padding-left:
+
   /* display: none; */
 }
 
@@ -84,7 +88,7 @@ img {
   border-radius: 20px;
   border-width: thin;
   width: 200px;
-  margin-left: 27%;
+  margin-left: 33%;
 }
 
 .page-footer {
@@ -114,11 +118,25 @@ input[type=text], select, textarea {
   border-radius: 4px;
   cursor: pointer;
 }
+<<<<<<< HEAD
 
 input[type=submit]:hover {
   background-color: #45a049;
 }
 
+=======
+#recalculate{
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 45%;
+  margin-top: 4%;
+  border-radius: 10px;
+}
+>>>>>>> 6ed4a786c2dd250556a7a769ade3cd3c1944cabd
 
 #calculate{
   border-style: solid;
@@ -133,11 +151,12 @@ select {
   width: 220px;
 }
 #form{
-  padding-left: 90px;
-  margin-top: 80px;
+  margin-top: 120px;
   font-family: 'Inconsolata', monospace;
   font-weight: 800;
   font-size: 20px;
+  text-align: center;
+  display: none;
 
 }
 #form input{
