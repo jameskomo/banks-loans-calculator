@@ -1,13 +1,14 @@
-body{
+body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
 }
-.navbar{
+
+.navbar {
   position: fixed;
-  height:60px;
-  overflow:hidden;
-  top:0;
+  height: 60px;
+  overflow: hidden;
+  top: 0;
   display: flex;
   align-items: center;
   background: #dfe6e9;
@@ -15,7 +16,8 @@ body{
   z-index: 9999;
   font-family: 'Holtwood One SC', serif;
 }
-.logo{
+
+.logo {
   float: left;
   margin-left: 30px;
   color: black;
@@ -23,29 +25,34 @@ body{
   font-family: 'Holtwood One SC', serif;
   background-size: contain;
 }
-.menu{
+
+.menu {
   position: absolute;
   right: 20px;
 }
-.menu a{
+
+.menu a {
   color: black;
   text-decoration: none;
   font-weight: 700;
-  margin-left:20px;
+  margin-left: 20px;
   transition: color 0.3s;
 }
+
 img {
-  background-repeat:no-repeat;
+  background-repeat: no-repeat;
   margin-top: 60px;
   opacity: 0.9;
   background-size: cover;
   background-position: center;
   /* height: 25%; */
 }
-.header{
+
+.header {
   text-align: center;
   color: black;
 }
+
 .centered {
   position: absolute;
   top: 50%;
@@ -55,10 +62,12 @@ img {
   font-family: 'Holtwood One SC', serif;
   font-style: italic;
 }
-.menu a:hover{
+
+.menu a:hover {
   color: #c0392b
 }
-#result{
+
+#result {
   border-style: solid;
   text-align: center;
   border-width: thin;
@@ -68,14 +77,24 @@ img {
   background-color: white;
   display: none;
   /* display: none; */
-  }
-.output{
+}
+
+.output {
   border-style: solid;
   border-radius: 20px;
   border-width: thin;
   width: 200px;
   margin-left: 27%;
 }
+
+.page-footer {
+  opacity: 6;
+  background-color: #fdfff0;
+  position: relative;
+  height: 35px;
+  padding-top: 10px;
+}
+
 input[type=text], select, textarea {
   width: 100%;
   padding: 12px;
@@ -95,17 +114,13 @@ input[type=text], select, textarea {
   border-radius: 4px;
   cursor: pointer;
 }
-
-
-#calculate{
-  border-style: solid;
-  border-width: thin;
-  border-radius: 10px;
+#calculate {
   width: 100%;
   height: 600px;
   background-color: #dfe6e9;
 }
-select{
+
+select {
   width: 220px;
 }
 #form{
