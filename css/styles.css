@@ -115,13 +115,10 @@ input[type=text], select, textarea {
   cursor: pointer;
 }
 
-<<<<<<< HEAD
 input[type=submit]:hover {
   background-color: #45a049;
 }
 
-#calculate {
-=======
 
 #calculate{
   border-style: solid;
