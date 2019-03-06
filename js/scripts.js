@@ -68,17 +68,47 @@ $(document).ready(function() {
 
 
       $(document).ready(function() {
-        $("#check").click(function(e) {
-          e.preventDefault();
+            $("#check").click(function(e) {
+                  e.preventDefault();
 
-          var loanAmount = parseInt($("input#loan-amount").val());
-          var loanTerm = parseInt($("input#loan-term").val());
-          var lenderList = $("select#lender-list option: selected").text();
+                  var loanAmount = parseInt($("input#loan-amount").val());
+                  var loanTerm = parseInt($("input#loan-term").val());
+                  var lenderList = $("select#lender-list option: selected").text();
 
-          var requestedLoan = loan(loanAmount, loanTerm, lenderList);
-          var applicationFee = appfee(loanAmount, lenderList);
+                  var requestedLoan = loan(loanAmount, loanTerm, lenderList);
+                  var applicationFee = appfee(loanAmount, lenderList);
 
-          var potentialLoan = requestedLoan + applicationFee;
-        });
+                  function cheapestLender(amount, term, facility) {
+                    var institution = facility.lenderCheck();
+                    var cheapLender = facility.lenderInterest();
+                    let bankInterest = 0;
+                    let totalBankLoan = 0;
+                    let microinterest = 0;
+                    let totalMicroLoan = 0;
 
-      });
+                    if (institution == "Bank" && cheapLender < 14) {
+                      bankInterestt = amount * facility.interest / 100 * term / 12;
+                      totalBankLoan = amount + bankInterest;
+                      return totalBankLoan;
+                    }
+
+                    if (institution == "Micro Lender" && cheapLender < 10) {
+                      microinterest = amount * facility.interest / 100;
+                      totalMicroLoan = amount + microinterest;
+                      return totalMicroLoan;
+                    }
+                  }
+
+                  $(document).ready(function() {
+                    $("#check").click(function(e) {
+                      e.preventDefault();
+
+                      var loanAmount = parseInt($("input#loan-amount").val());
+                      var loanTerm = parseInt($("input#loan-term").val());
+                      var lenderList = $("select#lender-list option: selected").val();
+
+
+                      var potentialLoan = requestedLoan + applicationFee;
+                    });
+
+                  });
