@@ -22,3 +22,19 @@ Lenders.prototype.lenderInterest = function() {
 Lenders.prototype.lenderName = function() {
   return this.name;
 };
+
+function loan(amount, term, facility) {
+  var institution = facility.lenderCheck();
+
+  if(institution == "Bank"){
+    var interestAmount = amount * facility.interest/100 * term/12;
+    var totalLoan = amount + interestAmount;
+    return totalLoan;
+  }
+
+  if(institution == "Micro Lender") {
+    var interestMicro = amount * facility.interest/100;
+    var totalMicroLoan = amount + interestMicro;
+    return totalMicroLoan;
+  }
+}
