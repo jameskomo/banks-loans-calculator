@@ -72,3 +72,6 @@ function appFee(amount, lender) {
     }
   }
 }
+$(document).ready(function(){
+  $('[data-toggle="tooltip"]').tooltip();
+});

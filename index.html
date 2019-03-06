@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <title>Loans Calculator</title>
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/popper.min.js"></script>
   <link rel="stylesheet" type="text/css" href="css/styles.css">
   <link rel="stylesheet" type="text/css" href="css/animate.css">
   <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Archivo+Black|Bungee+Inline|Faster+One" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Bungee|Bungee+Shade|Holtwood+One+SC|Rubik+Mono+One|Rye" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Inconsolata|Oswald|Roboto+Slab" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   <link rel="shortcut icon" type="images/png" href="images/debit-card.png">
@@ -24,7 +24,7 @@
     <div class="menu">
       <a href="index.html">Home</a>
       <a href="#calculate">Calculator</a>
-      <a href="#">About</a>
+      <a href="https://github.com/jameskomo/banks-loans-calculator" data-toggle="tooltip" title="This website lets you calculate loan interest rates allowing you to compare the rates of different banks and micro-lenders">About</a>
       <a href="#contact">Contacts</a>
     </div>
   </div>
@@ -34,6 +34,7 @@
      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
      <li data-target="#myCarousel" data-slide-to="1"></li>
      <li data-target="#myCarousel" data-slide-to="2"></li>
+     <li data-target="#myCarousel" data-slide-to="3"></li>
    </ol>
    <div class="carousel-inner">
      <div class="item active">
@@ -48,9 +49,6 @@
     <div class="item">
        <img src="images/kshx.jpg" alt="fourth slide" style="width:100%; height:640px;">
      </div>
-     <div class="item">
-        <img src="images/kshx1.jpg" alt="fifth slide" style="width:100%;">
-      </div>
    </div>
    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
      <span class="glyphicon glyphicon-chevron-left"></span>
@@ -116,7 +114,7 @@
         <label for="subject">Subject</label>
         <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
 
-        <input type="submit" value="Submit">
+        <button id="submit">SUBMIT</button>
       </form>
     </div>
   </div>
