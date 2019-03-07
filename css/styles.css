@@ -165,3 +165,7 @@ h1 {
 .well{
   /* display: none; */
 }
+
+#loanResults, #loanResults2, #clearTable{
+  display: none;
+}
