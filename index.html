@@ -2,92 +2,93 @@
 <html>
 
 <head>
- <title>Loans Calculator</title>
- <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
- <link rel="stylesheet" type="text/css" href="css/styles.css">
- <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One%7CArchivo+Black%7CBungee+Inline%7CFaster+One" rel="stylesheet">
- <link href="https://fonts.googleapis.com/css?family=Bungee%7CBungee+Shade%7CHoltwood+One+SC%7CRubik+Mono+One%7CRye" rel="stylesheet">
- <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
- <link href="https://fonts.googleapis.com/css?family=Inconsolata%7COswald%7CRoboto+Slab" rel="stylesheet">
- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
- <link rel="shortcut icon" type="images/png" href="images/debit-card.png">
- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
- <script src="js/scripts.js"></script>
+  <title>Loans Calculator</title>
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One%7CArchivo+Black%7CBungee+Inline%7CFaster+One" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Bungee%7CBungee+Shade%7CHoltwood+One+SC%7CRubik+Mono+One%7CRye" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata%7COswald%7CRoboto+Slab" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link rel="shortcut icon" type="images/png" href="images/debit-card.png">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <script src="js/scripts.js"></script>
 
 </head>
 
 <body>
- <div class="navbar">
-   <div class="logo">LOANS CALCULATOR</span></div>
-   <div class="menu">
-     <a href="index.html">Home</a>
-     <a href="#calculate">Calculator</a>
-     <a href="https://github.com/jameskomo/banks-loans-calculator" data-toggle="tooltip" title="This website lets you calculate loan interest rates allowing you to compare the rates of different banks and micro-lenders">About</a>
-     <a href="#contact">Contacts</a>
-   </div>
- </div>
- <div class="container" id="crsl">
-   <div id="myCarousel" class="carousel slide" data-ride="carousel">
-     <ol class="carousel-indicators">
-       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-       <li data-target="#myCarousel" data-slide-to="1"></li>
-       <li data-target="#myCarousel" data-slide-to="2"></li>
-       <li data-target="#myCarousel" data-slide-to="3"></li>
-     </ol>
-     <div class="carousel-inner">
-       <div class="item active">
-         <img src="images/bank.jpg" alt="first slide" style="width:100%;">
-       </div>
-       <div class="item">
-         <img src="images/ksh.jpg" alt="second slide" style="width:100%; height:640px;">
-       </div>
-       <div class="item">
-         <img src="images/CBK.jpg" alt="third slide" style="width:100%; height:640px;">
-       </div>
-       <div class="item">
-         <img src="images/kshx.jpg" alt="fourth slide" style="width:100%; height:640px;">
-       </div>
-     </div>
-     <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-       <span class="glyphicon glyphicon-chevron-left"></span>
-       <span class="sr-only">Previous</span>
-     </a>
-     <a class="right carousel-control" href="#myCarousel" data-slide="next">
-       <span class="glyphicon glyphicon-chevron-right"></span>
-       <span class="sr-only">Next</span>
-     </a>
-   </div>
- </div>
-<div class="container">
-   <br>
-   <h1>Calculate</h1><br>
-   <div id="calculate">
-     <div class="row">
-       <form action="#" id="form">
-         Loan Amount:<br>
-         <input type="number" name="loanAmount" placeholder="Enter loan amount" id="loan-amount">
-         <br><br>
-         Loan Term:<br>
-         <input type="number" name="loanTerm" placeholder="Loan term in months" id="loan-term">
-         <br><br>
-         <select id="lender-list">
-           <option value="" disabled selected>Choose Bank</option>
-           <option value="13">KCB</option>
-           <option value="14">Equity</option>
-           <option value="15">Cooperative Bank of Kenya</option>
-           <option value="18">Barclays</option>
-           <option value="7.5">Mshwari</option>
-           <option value="15">Tala</option>
-         </select>
-         <br><br>
-         <button id="check" class="btn btn-lg">Calculate <i class="fas fa-calculator"></i></button>
-       </form>
+  <div class="navbar">
+    <div class="logo">LOANS CALCULATOR</span></div>
+    <div class="menu">
+      <a href="index.html">Home</a>
+      <a href="#calculate">Calculator</a>
+      <a href="https://github.com/jameskomo/banks-loans-calculator" data-toggle="tooltip" title="This website lets you calculate loan interest rates allowing you to compare the rates of different banks and micro-lenders">About</a>
+      <a href="#contact">Contacts</a>
+    </div>
+  </div>
+  <div class="container" id="crsl">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="images/bank.jpg" alt="first slide" style="width:100%;">
+        </div>
+        <div class="item">
+          <img src="images/ksh.jpg" alt="second slide" style="width:100%; height:640px;">
+        </div>
+        <div class="item">
+          <img src="images/CBK.jpg" alt="third slide" style="width:100%; height:640px;">
+        </div>
+        <div class="item">
+          <img src="images/kshx.jpg" alt="fourth slide" style="width:100%; height:640px;">
+        </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+  <div class="container">
+    <br>
+    <h1>Calculate</h1><br>
+    <div id="calculate">
+      <div class="row">
+        <form action="#" id="form">
+          Loan Amount:<br>
+          <input type="number" name="loanAmount" placeholder="Enter loan amount" id="loan-amount">
+          <br><br>
+          Loan Term:<br>
+          <input type="number" name="loanTerm" placeholder="Loan term in months" id="loan-term">
+          <br><br>
+          <select id="lender-list">
+            <option value="" disabled selected>Choose Bank</option>
+            <option value="13">KCB</option>
+            <option value="14">Equity</option>
+            <option value="15">Cooperative Bank of Kenya</option>
+            <option value="18">Barclays</option>
+            <option value="7.5">Mshwari</option>
+            <option value="15">Tala</option>
+          </select>
+          <br><br>
+          <button id="check" class="btn btn-lg">Calculate <i class="fas fa-calculator"></i></button>
+          
+        </form>
 
-       <div id="result">
-         <!-- <div>
+        <div id="result">
+          <div>
            <h2 id="loan-provider"></h2>
            <h4>Monthly payments:</h4>
            <h4 id="monthly-payments" class="output"></h4>
@@ -99,76 +100,86 @@
            <h4 id="application-cost"class="output"></h4>
            <h4>Annual interest rate:</h4>
            <h4 id="annual-interest" class="output"></h4>
-         </div> -->
-         <button id="recalculate">Re-calculate</button>
-       </div>
-     </div>
-   </div>
-<div class="container table-responsive table table-bordered">
-     <table id="loanResults" class="table table-hover">
-       <caption>Loan Summary</caption>
-       <thead>
-         <tr>
-           <th scope="col">#</th>
-           <th scope="col">Lender Name</th>
-           <th scope="col">Requested Amount</th>
-           <th scope="col">Loan Term</th>
-           <th scope="col">Monthly Payments</th>
-           <th scope="col">Total Interest</th>
-           <th scope="col">Annual Interest Rate</th>
-           <th scope="col">Application Cost</th>
-           <th scope="col">Total Amount Payable</th>
-         </tr>
-       </thead>
-       <tbody>
-         <tr>
-           <th scope="row">1</th>
-           <td id="loanProvider"></td>
-           <td id="requestedAmount"></td>
-           <td id="loanTerm"></td>
-           <td id="monthlyPayments"></td>
-           <td id="totalInterest"></td>
-           <td id="totalAmountPayable"></td>
-           <td id="applicationCost"></td>
-           <td id="annualInterest"></td>
-         </tr>
-         <tr>
-           <th scope="row">2</th>
-           <td></td>
-           <td></td>
-           <td></td>
-           <td></td>
-           <td></td>
-           <td></td>
-           <td></td>
-           <td></td>
-         </tr>
-       </tbody>
+         </div>
+        </div>
+      </div>
+    </div>
+    <div class="container table-responsive table table-bordered">
+      <table id="loanResults" class="table table-hover">
+        <caption>Loan Summary</caption>
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Lender Name</th>
+            <th scope="col">Requested Amount</th>
+            <th scope="col">Loan Term</th>
+            <th scope="col">Monthly Payments</th>
+            <th scope="col">Total Interest</th>
+            <th scope="col">Annual Interest Rate</th>
+            <th scope="col">Application Cost</th>
+            <th scope="col">Total Amount Payable</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td id="loanProvider"></td>
+            <td id="requestedAmount"></td>
+            <td id="loanTerm"></td>
+            <td id="monthlyPayments"></td>
+            <td id="totalInterest"></td>
+            <td id="totalAmountPayable"></td>
+            <td id="applicationCost"></td>
+            <td id="annualInterest"></td>
+          </tr>
+        </tbody>
+      </table>
 
-     </table>
-   </div>
-   <button id="tableView" class="btn btn-lg">View on table <i class="fas fa-calculator"></i></button>
-   <h1>Contact Us</h1> <br>
-   <div class="well" id="contact">
-     <form action="">
-       <label for="fname">First Name</label>
-       <input type="text" id="fname" name="firstname" placeholder="Your name..">
 
-       <label for="lname">Last Name</label>
-       <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      <table id="loanResults" class="table table-hover">
+        <caption>Cheaper Loan Provider</caption>
+        <tbody>
+          <tr>
+            <th scope="row">2</th>
+            <td id="loanProvider2"></td>
+            <td id="requestedAmount2"></td>
+            <td id="loanTerm2"></td>
+            <td id="monthlyPayments2"></td>
+            <td id="totalInterest2"></td>
+            <td id="totalAmountPayable2"></td>
+            <td id="applicationCost2"></td>
+            <td id="annualInterest2"></td>
+          </tr>
+        </tbody>
+      </table>
 
-       <label for="subject">Subject</label>
-       <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
 
-       <button id="submit">SUBMIT</button>
-     </form>
-   </div>
- </div>
- <!-- <footer class="page-footer">
+
+      <button id="tableView" class="btn btn-lg">View on table <i class="fas fa-calculator"></i></button>
+
+
+    </div>
+    <h1>Contact Us</h1> <br>
+    <div class="well" id="contact">
+      <form action="">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+        <button id="submit">SUBMIT</button>
+      </form>
+    </div>
+  </div>
+  <!-- <footer class="page-footer">
    <div class="footer-copyright text-center py-3"><strong>Developed by TOSH, SPG, M.M.A, & K.O.M.O © 2019</strong></div>
  </footer> -->
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
- <script src="js/scripts.js" charset="utf-8"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/scripts.js" charset="utf-8"></script>
 </body>
 
 </html>

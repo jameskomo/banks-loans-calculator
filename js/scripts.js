@@ -57,7 +57,21 @@ $(document).ready(function() {
       $("#applicationCost").text(0);
       $("#annualInterest").text(totalAmountPayable);
 
-      // alert(totalAmountPayable);
+      $("#compareLoans").click(function() {
+        if(lenderName === "Mshwari") {
+
+        $("#loanProvider2").text(lenderName);
+        $("#requestedAmount2").text(loanAmount);
+        $("#loanTerm2").text(loanTerm);
+        $("#monthlyPayments2").text(monthlyPayments);
+        $("#totalInterest2").text(interestPayable);
+        $("#totalAmountPayable2").text(0);
+        $("#applicationCost2").text(0);
+        $("#annualInterest2").text(totalAmountPayable);
+
+        }
+
+      });
     }
     if (lenderName !== "Mshwari" || lenderName !== "Tala"){
       var appFees = Math.round(appFee(loanAmount, interestRate));
@@ -75,6 +89,20 @@ $(document).ready(function() {
       $("#totalAmountPayable").text(interestRate + "%");
       $("#applicationCost").text(appFees);
       $("#annualInterest").text(loanPlusFees);
+
+      $("#compareLoans").click(function() {
+        if(lenderName === "KCB") {
+          $("#loanProvider2").text(lenderName);
+          $("#requestedAmount2").text(loanAmount);
+          $("#loanTerm2").text(loanTerm);
+          $("#monthlyPayments2").text(bankMonthlyPayments);
+          $("#totalInterest2").text(bankInterestPayable);
+          $("#totalAmountPayable2").text(interestRate + "%");
+          $("#applicationCost2").text(appFees);
+          $("#annualInterest2").text(loanPlusFees);
+        }
+      });
+
     }
 
 
@@ -87,6 +115,15 @@ $(document).ready(function() {
       $("#totalAmountPayable").text("");
       $("#applicationCost").text("");
       $("#annualInterest").text("");
+
+      $("#loanProvider2").text("");
+      $("#requestedAmount2").text("");
+      $("#loanTerm2").text("");
+      $("#monthlyPayments2").text("");
+      $("#totalInterest2").text("");
+      $("#totalAmountPayable2").text("");
+      $("#applicationCost2").text("");
+      $("#annualInterest2").text("");
     });
 
 
