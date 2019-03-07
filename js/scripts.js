@@ -1,3 +1,19 @@
+<<<<<<< HEAD
+=======
+
+function bankLoan(amount, term, interest) {
+    var totalLoan = amount + (amount * interest / 100 * term / 12);
+    return totalLoan;
+}
+
+function microLoan(amount, interest) {
+      var totalMicroLoan = amount + (amount * interest / 100);
+      return totalMicroLoan;
+}
+
+function appFee(amount, interest) {
+
+>>>>>>> 295334eff049d7da33e679594f16ba95ea87ca9f
 
 //BACK-END LOGIC
 $( "#submit" ).click(function() {
@@ -46,7 +62,13 @@ function loan(amount, term, facility) {
 
 }
 
+<<<<<<< HEAD
 function appFee(amount, interest) {
+=======
+function appFee(amount, lender) {
+  var lenderType = lender.lender;
+  var lenderInterest = lender.interest;
+>>>>>>> 295334eff049d7da33e679594f16ba95ea87ca9f
   var appFees = 0;
 
     if (interest >= 10 && interest <= 12) {
@@ -87,7 +109,10 @@ $(document).ready(function() {
     var potentialLoan = requestedLoan + applicationFee;
     var monthlyPayments = potentialLoan / 12;
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 295334eff049d7da33e679594f16ba95ea87ca9f
 $(document).ready(function() {
   $('#check').click(function() {
     event.preventDefault();
@@ -119,6 +144,10 @@ $(document).ready(function() {
     // var potentialLoan = requestedLoan + applicationFee;
     // var monthlyPayments = potentialLoan / 12;
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 295334eff049d7da33e679594f16ba95ea87ca9f
 
   });
 
