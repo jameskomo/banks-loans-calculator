@@ -1,3 +1,10 @@
+
+//BACK-END LOGIC
+$( "#submit" ).click(function() {
+  $("#repaymentFrequency").on("change", function() {
+    var repaymentFrequency = $(this).val();
+    console.log(repaymentFrequency);
+
 var Lenders = function(name, interest, lender) {
   this.name = name;
   this.interest = interest;
@@ -30,13 +37,13 @@ function loan(amount, term, facility) {
     var interestAmount = amount * facility.interest / 100 * term / 12;
     var totalLoan = amount + interestAmount;
     return totalLoan;
+
+  }
+  $("#select-bank").on("change", function() {
+    var selectedLender = $(this).val();
+    alert(selectedLender);
   }
 
-  if (institution == "Micro Lender") {
-    var interestMicro = amount * facility.interest / 100;
-    var totalMicroLoan = amount + interestMicro;
-    return totalMicroLoan;
-  }
 }
 
 function appFee(amount, lender) {
@@ -106,4 +113,5 @@ $(document).ready(function() {
 
 
   });
+
 });
