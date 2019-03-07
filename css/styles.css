@@ -64,7 +64,7 @@ img {
   background-color: white;
   width: 50%;
   height: 50%;
-  display: none;
+  /* display: none; */
 }
 
 .output {
@@ -160,4 +160,9 @@ h1 {
 
 #crsl {
   margin-top: 10px;
+}
+
+.well{
+  z-index: -1;
+  display: none;
 }

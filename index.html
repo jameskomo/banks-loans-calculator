@@ -85,27 +85,29 @@
          <br><br>
          <button id="check" class="btn btn-lg">Calculate <i class="fas fa-calculator"></i></button>
        </form>
+         <!-- <button id="tableView" class="btn btn-lg">View on table <i class="fas fa-calculator"></i></button> -->
        <div id="result">
          <div>
+           <h2 id="loan-provider"></h2>
            <h4>Monthly payments:</h4>
-           <h4 class="output"></h4>
+           <h4 id="monthly-payments" class="output"></h4>
            <h4>Total interest:</h4>
-           <h4 class="output"></h4>
+           <h4 id="total-interest"class="output"></h4>
            <h4>Total amount to be paid:</h4>
-           <h4 class="output"></h4>
+           <h4 id="total-amount-payable" class="output"></h4>
            <h4>Application cost:</h4>
-           <h4 class="output"></h4>
+           <h4 id="application-cost"class="output"></h4>
            <h4>Annual interest rate:</h4>
-           <h4 class="output"></h4>
+           <h4 id="annual-interest" class="output"></h4>
          </div>
          <button id="recalculate">Re-calculate</button>
        </div>
      </div>
    </div>
 <div class="container table-responsive table table-bordered">
-     <table class="table table-hover">
+     <table id="loanResults" class="table table-hover">
        <caption>Loan Summary</caption>
-       <thead>
+       <!-- <thead>
          <tr>
            <th scope="col">#</th>
            <th scope="col">Loan Amount</th>
@@ -136,7 +138,7 @@
          </tr>
        </tbody>
 
-     </table>
+     </table> -->
    </div>
    <h1>Contact Us</h1> <br>
    <div class="well" id="contact">
@@ -154,9 +156,9 @@
      </form>
    </div>
  </div>
- <footer class="page-footer">
+ <!-- <footer class="page-footer">
    <div class="footer-copyright text-center py-3"><strong>Developed by TOSH, SPG, M.M.A, & K.O.M.O © 2019</strong></div>
- </footer>
+ </footer> -->
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
  <script src="js/scripts.js" charset="utf-8"></script>
 </body>
