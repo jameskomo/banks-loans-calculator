@@ -90,13 +90,16 @@ $(document).ready(function() {
     var loanAmount = $('#loan-amount').val();
     var loanTerm = $("#loan-term").val();
     var lenderList = $("#lender-list option:selected").val();
+    console.log(loanAmount);
+    console.log(loanTerm);
     console.log(lenderList);
+    var loanRequested=[loanAmount, loanTerm, typeOf(lenderList)];
+    console.log(loanRequested);
+
+
+
+    // var requestedLoan = loan(loanAmount, loanTerm, lenderList);
     console.log(requestedLoan);
-
-
-
-    var requestedLoan = loan(loanAmount, loanTerm, lenderList);
-
     var applicationFee = appFee(loanAmount, lenderList);
     var potentialLoan = requestedLoan + applicationFee;
     var monthlyPayments = potentialLoan / 12;
