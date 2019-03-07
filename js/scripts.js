@@ -26,7 +26,6 @@ function appFee(amount, interest) {
     } else {
     return appFees;
     }
-
 }
 
 
@@ -43,9 +42,9 @@ $(document).ready(function() {
     console.log(lenderName);
 
     if(lenderName === "Mshwari" || lenderName === "Tala") {
-      console.log(microLoan(loanAmount, interestRate));
+      console.log(Math.round(microLoan(loanAmount, interestRate)));
     } else {
-      var loanPlusFees = bankLoan(loanAmount, loanTerm, interestRate) + appFee(loanAmount, interestRate);
+      var loanPlusFees = Math.round(bankLoan(loanAmount, loanTerm, interestRate) + appFee(loanAmount, interestRate));
       console.log(loanPlusFees);
     }
 
