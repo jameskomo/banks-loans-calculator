@@ -1,5 +1,5 @@
 function bankLoan(amount, term, interest) {
-    var totalLoan = amount + (amount * interest / 100 * term / 12);
+    var totalLoan = amount + (amount * interest / 100 ) * term / 12;
     return totalLoan;
 }
 
@@ -56,12 +56,24 @@ $(document).ready(function() {
       $("#annual-interest").text(0);
 
       // alert(totalAmountPayable);
-    } else {
-      var loanPlusFees = Math.round(bankLoan(loanAmount, loanTerm, interestRate) + appFee(loanAmount, interestRate));
+    }
+    if (lenderName !== "Mshwari" || lenderName !== "Tala"){
+      var appFees = Math.round(appFee(loanAmount, interestRate));
+      var loanPlusInterest = bankLoan(loanAmount, loanTerm, interestRate);
+      var loanPlusFees = loanPlusInterest + appFees;
+      var bankMonthlyPayments = Math.round(loanPlusFees/loanTerm);
+      var bankInterestPayable = loanPlusFees - loanAmount;
       console.log(loanPlusFees);
 
-
+      $("#loan-provider").text(lenderName);
+      $("#monthly-payments").text(bankMonthlyPayments);
+      $("#total-interest").text(bankInterestPayable);
+      $("#total-amount-payable").text(loanPlusFees);
+      $("#application-cost").text(appFees);
+      $("#annual-interest").text(interestRate + "%");
     }
+
+
     $('#tableView').click(function() {
       var insertInformation = function () {
         var table = document.getElementById("loanResults");
