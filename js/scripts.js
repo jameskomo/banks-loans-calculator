@@ -26,6 +26,7 @@ function appFee(amount, interest) {
     } else {
     return appFees;
     }
+
 }
 
 
@@ -83,7 +84,10 @@ $(document).ready(function() {
         var cell3 = row.insertCell(2);
         var cell4 = row.insertCell(3);
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 4296375580cdfdde8ca5561621892fdd45a6893f
 
         cell1.innerHTML = "loanAmount";
         cell2.innerHTML = "totalAmountPayable";
@@ -91,5 +95,9 @@ $(document).ready(function() {
         cell4.innerHTML = "loanTerm";
     };
   });
+<<<<<<< HEAD
   });
+=======
+
+>>>>>>> 4296375580cdfdde8ca5561621892fdd45a6893f
 });

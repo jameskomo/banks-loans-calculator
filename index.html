@@ -161,6 +161,146 @@
  </footer> -->
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
  <script src="js/scripts.js" charset="utf-8"></script>
+  <div class="navbar">
+    <div class="logo">LOANS CALCULATOR</span></div>
+    <div class="menu">
+      <a href="index.html">Home</a>
+      <a href="#calculate">Calculator</a>
+      <a href="https://github.com/jameskomo/banks-loans-calculator" data-toggle="tooltip" title="This website lets you calculate loan interest rates allowing you to compare the rates of different banks and micro-lenders">About</a>
+      <a href="#contact">Contacts</a>
+    </div>
+  </div>
+  <div class="container" id="crsl">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="images/bank.jpg" alt="first slide" style="width:100%;">
+        </div>
+        <div class="item">
+          <img src="images/ksh.jpg" alt="second slide" style="width:100%; height:640px;">
+        </div>
+        <div class="item">
+          <img src="images/CBK.jpg" alt="third slide" style="width:100%; height:640px;">
+        </div>
+        <div class="item">
+          <img src="images/kshx.jpg" alt="fourth slide" style="width:100%; height:640px;">
+        </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+  <div class="container">
+    <br>
+    <h1>Calculate</h1><br>
+    <div id="calculate">
+      <div class="row">
+        <form action="#" id="form">
+          Loan Amount:<br>
+          <input type="number" name="loanAmount" placeholder="Enter loan amount" id="loan-amount">
+          <br><br>
+          Loan Term:<br>
+          <input type="number" name="loanTerm" placeholder="Loan term in months" id="loan-term">
+          <br><br>
+          <select id="lender-list">
+            <option value="" disabled selected>Choose Bank</option>
+            <option value="13">KCB</option>
+            <option value="14">Equity</option>
+            <option value="15">Cooperative Bank of Kenya</option>
+            <option value="18">Barclays</option>
+            <option value="7.5">Mshwari</option>
+            <option value="15">Tala</option>
+          </select>
+          <br><br>
+          <button id="check" class="btn btn-lg">Calculate <i class="fas fa-calculator"></i></button>
+        </form>
+        <div id="result">
+          <div>
+            <h4>Monthly payments:</h4>
+            <h4 class="output"></h4>
+            <h4>Total interest:</h4>
+            <h4 class="output"></h4>
+            <h4>Total amount to be paid:</h4>
+            <h4 class="output"></h4>
+            <h4>Application cost:</h4>
+            <h4 class="output"></h4>
+            <h4>Annual interest rate:</h4>
+            <h4 class="output"></h4>
+          </div>
+          <button id="recalculate">Re-calculate</button>
+        </div>
+      </div>
+    </div>
+    <div class="container table-responsive table table-bordered">
+      <table class="table table-hover" id="loanResults">
+        <caption>Loan Summary</caption>
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Loan Amount</th>
+            <th scope="col">Total Amount Payable</th>
+            <th scope="col">Interest Payable</th>
+            <th scope="col">Payment Terms(months)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td colspan="2"></td>
+            <td></td>
+          </tr>
+        </tbody>
+
+      </table>
+    </div>
+    <h1>Contact Us</h1> <br>
+    <div class="well" id="contact">
+      <form action="">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+        <button id="submit">SUBMIT</button>
+      </form>
+    </div>
+  </div>
+  <footer class="page-footer">
+    <div class="footer-copyright text-center py-3"><strong>Developed by TOSH, SPG, M.M.A, & K.O.M.O © 2019</strong></div>
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/scripts.js" charset="utf-8"></script>
+
 </body>
 
 </html>
