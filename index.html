@@ -26,6 +26,7 @@
       <a href="#calculate">Calculator</a>
       <a href="https://github.com/jameskomo/banks-loans-calculator" target="_blank" data-toggle="tooltip" title="This website lets you calculate loan interest rates allowing you to compare the rates of different banks and micro-lenders">About</a>
       <a href="#contact" href="#contactUs">Contact Us</a>
+      
     </div>
   </div>
   <div class="container" id="crsl">
@@ -67,13 +68,13 @@
       <div class="row">
         <form action="#" id="form">
           Loan Amount:<br>
-          <input type="number" name="loanAmount" placeholder="Enter loan amount" id="loan-amount">
+          <input type="number" name="loanAmount" placeholder="Enter loan amount" id="loan-amount" required>
           <br><br>
           Loan Term:<br>
-          <input type="number" name="loanTerm" placeholder="Loan term in months" id="loan-term">
+          <input type="number" name="loanTerm" placeholder="Loan term in months" id="loan-term" required>
           <br><br>
           <select id="lender-list">
-            <option value="" disabled selected>Choose Lender</option>
+            <option value="" disabled selected required>Choose Lender</option>
             <option value="13">KCB</option>
             <option value="14">Equity</option>
             <option value="15">Cooperative Bank of Kenya</option>
