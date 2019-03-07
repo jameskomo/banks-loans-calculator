@@ -49,6 +49,8 @@ $(document).ready(function() {
     }
 
 
+
+
     // var loanRequested = ;
     // console.log(loanRequested);
     // console.log(appFee(10000, kcb));
