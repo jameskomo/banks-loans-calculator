@@ -4,8 +4,8 @@ function bankLoan(amount, term, interest) {
 }
 
 function microLoan(amount, interest) {
-      var totalMicroLoan = amount + (amount * interest / 100);
-      return totalMicroLoan;
+     var totalMicroLoan = amount + (amount * interest / 100);
+     return totalMicroLoan;
 }
 
 function appFee(amount, interest) {
@@ -26,6 +26,7 @@ function appFee(amount, interest) {
     } else {
     return appFees;
     }
+
 }
 
 
@@ -84,7 +85,6 @@ $(document).ready(function() {
         var cell4 = row.insertCell(3);
 
 
-
         cell1.innerHTML = "loanAmount";
         cell2.innerHTML = "totalAmountPayable";
         cell3.innerHTML = "interestPayable";
@@ -92,8 +92,4 @@ $(document).ready(function() {
     };
   });
 
-
-
-
-  });
 });
