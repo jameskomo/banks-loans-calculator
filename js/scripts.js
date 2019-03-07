@@ -48,12 +48,14 @@ $(document).ready(function() {
       var interestPayable = totalAmountPayable - loanAmount;
       var monthlyPayments = Math.round(totalAmountPayable/loanTerm);
 
-      $("#loan-provider").text(lenderName);
-      $("#monthly-payments").text(monthlyPayments);
-      $("#total-interest").text(interestPayable);
-      $("#total-amount-payable").text(totalAmountPayable);
-      $("#application-cost").text(0);
-      $("#annual-interest").text(0);
+      $("#loanProvider").text(lenderName);
+      $("#requestedAmount").text(loanAmount);
+      $("#loanTerm").text(loanTerm);
+      $("#monthlyPayments").text(monthlyPayments);
+      $("#totalInterest").text(interestPayable);
+      $("#totalAmountPayable").text(0);
+      $("#applicationCost").text(0);
+      $("#annualInterest").text(totalAmountPayable);
 
       // alert(totalAmountPayable);
     }
@@ -65,32 +67,27 @@ $(document).ready(function() {
       var bankInterestPayable = loanPlusFees - loanAmount;
       console.log(loanPlusFees);
 
-      $("#loan-provider").text(lenderName);
-      $("#monthly-payments").text(bankMonthlyPayments);
-      $("#total-interest").text(bankInterestPayable);
-      $("#total-amount-payable").text(loanPlusFees);
-      $("#application-cost").text(appFees);
-      $("#annual-interest").text(interestRate + "%");
+      $("#loanProvider").text(lenderName);
+      $("#requestedAmount").text(loanAmount);
+      $("#loanTerm").text(loanTerm);
+      $("#monthlyPayments").text(bankMonthlyPayments);
+      $("#totalInterest").text(bankInterestPayable);
+      $("#totalAmountPayable").text(interestRate + "%");
+      $("#applicationCost").text(appFees);
+      $("#annualInterest").text(loanPlusFees);
     }
 
 
     $('#tableView').click(function() {
-      var insertInformation = function () {
-        var table = document.getElementById("loanResults");
-        var row = table.insertRow(0);
-        var cell1 = row.insertCell(0);
-        var cell2 = row.insertCell(1);
-        var cell3 = row.insertCell(2);
-        var cell4 = row.insertCell(3);
-
-
-
-        cell1.innerHTML = "loanAmount";
-        cell2.innerHTML = "totalAmountPayable";
-        cell3.innerHTML = "interestPayable";
-        cell4.innerHTML = "loanTerm";
-    };
-  });
+      $("#loanProvider").text("");
+      $("#requestedAmount").text("");
+      $("#loanTerm").text("");
+      $("#monthlyPayments").text("");
+      $("#totalInterest").text("");
+      $("#totalAmountPayable").text("");
+      $("#applicationCost").text("");
+      $("#annualInterest").text("");
+    });
 
 
 
