@@ -1,168 +1,171 @@
 body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
-  background-color: #dfe6e9;
+ margin: 0;
+ padding: 0;
+ font-family: sans-serif;
+ background-color: #dfe6e9;
 }
 
 .navbar {
-  position: fixed;
-  height: 60px;
-  overflow: hidden;
-  top: 0;
-  display: flex;
-  align-items: center;
-  background: white;
-  width: 100%;
-  z-index: 9999;
-  font-family: 'Holtwood One SC', serif;
+ position: fixed;
+ height: 60px;
+ overflow: hidden;
+ top: 0;
+ display: flex;
+ align-items: center;
+ background: white;
+ width: 100%;
+ z-index: 9999;
+ font-family: 'Holtwood One SC', serif;
 }
 
 .logo {
-  float: left;
-  margin-left: 30px;
-  color: black;
-  font-size: 25px;
-  font-family: 'Holtwood One SC', serif;
-  background-size: contain;
+ float: left;
+ margin-left: 30px;
+ color: black;
+ font-size: 25px;
+ font-family: 'Holtwood One SC', serif;
+ background-size: contain;
 }
 
 .menu {
-  position: absolute;
-  right: 20px;
+ position: absolute;
+ right: 20px;
 }
 
 .menu a {
-  color: black;
-  text-decoration: none;
-  font-weight: 700;
-  margin-left: 20px;
-  transition: color 0.3s;
+ color: black;
+ text-decoration: none;
+ font-weight: 700;
+ margin-left: 20px;
+ transition: color 0.3s;
 }
 
 img {
-  background-repeat: no-repeat;
-  margin-top: 60px;
-  opacity: 0.9;
-  background-size: cover;
-  background-position: center;
-  height: 500px;
+ background-repeat: no-repeat;
+ margin-top: 60px;
+ opacity: 0.9;
+ background-size: cover;
+ background-position: center;
+ height: 500px;
 }
 
 .menu a:hover {
-  color: #c0392b
+ color: #c0392b
 }
 
 #result {
-  border-style: solid;
-  border-width: thin;
-  text-align: center;
-  font-family: 'Roboto Slab', serif;
-  border-radius: 20px;
-  margin-top: 12%;
-  margin-left: 25%;
-  background-color: white;
-  width: 50%;
-  height: 50%;
-  /* display: none; */
+ border-style: solid;
+ border-width: thin;
+ text-align: center;
+ font-family: 'Roboto Slab', serif;
+ border-radius: 20px;
+ margin-top: 12%;
+ margin-left: 25%;
+ background-color: white;
+ width: 50%;
+ height: 50%;
+ /* display: none; */
 }
 
 .output {
-  border-style: solid;
-  border-radius: 20px;
-  border-width: thin;
-  width: 200px;
-  margin-left: 33%;
+ border-style: solid;
+ border-radius: 20px;
+ border-width: thin;
+ width: 200px;
+ margin-left: 33%;
 }
 
 input[type=text], select, textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
+ width: 100%;
+ padding: 12px;
+ border: 1px solid #ccc;
+ border-radius: 4px;
+ box-sizing: border-box;
+ margin-top: 6px;
+ margin-bottom: 16px;
+ resize: vertical;
 }
 
 #check {
-  background-color: #4CAF50;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
+ background-color: #4CAF50;
+ color: white;
+ padding: 12px 20px;
+ border: none;
+ border-radius: 10px;
+ cursor: pointer;
 }
 
 #recalculate {
-  background-color: #4CAF50;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  margin-left: 45%;
-  margin-top: 4%;
-  border-radius: 10px;
+ background-color: #4CAF50;
+ color: white;
+ padding: 12px 20px;
+ border: none;
+ border-radius: 4px;
+ cursor: pointer;
+ margin-left: 45%;
+ margin-top: 4%;
+ border-radius: 10px;
 }
 
 #calculate {
-  border-style: solid;
-  border-width: thin;
-  border-radius: 10px;
-  width: 100%;
-  height: 600px;
-  background-color: white;
+ border-style: solid;
+ border-width: thin;
+ border-radius: 10px;
+ width: 100%;
+ height: 600px;
+ background-color: white;
 }
 
 select {
-  width: 220px;
+ width: 220px;
 }
 
 #form {
-  margin-top: 120px;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 800;
-  font-size: 20px;
-  text-align: center;
+ margin-top: 120px;
+ font-family: 'Roboto', sans-serif;
+ font-weight: 800;
+ font-size: 20px;
+ text-align: center;
 }
 
 #form input {
-  border-radius: 5px;
+ border-radius: 5px;
 }
 
 h1 {
-  font-family: 'Oswald', sans-serif;
+ font-family: 'Oswald', sans-serif;
 }
 
 .page-footer {
-  background-color: white;
-  height: 50px;
-  padding-top: 15px;
+ background-color: white;
+ height: 50px;
+ padding-top: 15px;
 }
 
 #submit {
-  display: block;
-  margin-left: 45%;
-  width: 100px;
-  height: 50px;
-  border-radius: 100px;
-  cursor: pointer;
-  background-color: #55efc4;
-  font-weight: bold;
+ display: block;
+ margin-left: 45%;
+ width: 100px;
+ height: 50px;
+ border-radius: 100px;
+ cursor: pointer;
+ background-color: #55efc4;
+ font-weight: bold;
 }
 
 #contact {
-  border-radius: 30px;
-  font-size: 15px;
+ border-radius: 30px;
+ font-size: 15px;
 }
 
 #crsl {
-  margin-top: 10px;
+ margin-top: 10px;
 }
 
 .well{
-  z-index: -1;
-  display: none;
+ /* display: none; */
 }
+Message Input
+
+
+Message Simon Gatheru Waigi
